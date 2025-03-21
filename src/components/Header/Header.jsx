@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
+import NavBar from "../NavBar/NavBar";
 
 const Header = () => {
   return (
     <header>
-      <h1>My Blog</h1>
-
-      <nav>
-        <Link to="/">Accueil</Link>
-      </nav>
+      <NavBar />
     </header>
   );
 };
