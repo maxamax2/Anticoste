@@ -1,9 +1,9 @@
-import Recits from "../components/Récits/Recits";
+import ListeRecits from "../components/ListeRécits/ListeRecits";
 
 const RoseDesVents = () => {
   return (
     <div>
-      <Recits />
+      <ListeRecits />
     </div>
   );
 };

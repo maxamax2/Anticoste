@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Accueil from "./pages/Accueil";
 import APropos from "./pages/APropos";
 import RoseDesVents from "./pages/RoseDesVents";
-import Recit from "./pages/Recit";
+import FicheRecit from "./pages/FicheRecit";
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/" element={<Accueil />} />
           <Route path="/a-propos" element={<APropos />} />
           <Route path="/rose-des-vents" element={<RoseDesVents />} />
-          <Route path="/recit" element={<Recit />} />
+          <Route path="/recit" element={<FicheRecit />} />
           <Route path="*" element={<h1>404 - Page Not Found</h1>} />
         </Routes>
       </div>

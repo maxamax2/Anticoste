@@ -1,5 +1,5 @@
 const Recit = () => {
-  return <h1>Récit</h1>;
+  return <div></div>;
 };
 
 export default Recit;
