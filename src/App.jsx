@@ -8,8 +8,22 @@ const App = () => {
   return (
     <div className="app">
       <div className="content">
-        <h1>App</h1>
-
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Accueil</a>
+            </li>
+            <li>
+              <a href="/a-propos">À Propos</a>
+            </li>
+            <li>
+              <a href="/rose-des-vents">Rose des Vents</a>
+            </li>
+            <li>
+              <a href="/recit">Récit</a>
+            </li>
+          </ul>
+        </nav>
         <Routes>
           <Route path="/" element={<Accueil />} />
           <Route path="/a-propos" element={<APropos />} />

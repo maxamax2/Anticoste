@@ -1,5 +1,11 @@
+import Recits from "../components/Récits/Recits";
+
 const RoseDesVents = () => {
-  return <h1>Rose des vents</h1>;
+  return (
+    <div>
+      <Recits />
+    </div>
+  );
 };
 
 export default RoseDesVents;
