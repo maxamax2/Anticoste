@@ -6,8 +6,7 @@ const ListeRecits = () => {
 
   return (
     <div>
-      <h1>Récits</h1>
-      <div>
+      <div className="bannieres__recit--container">
         {bannieres.map((banniere) => (
           <Banniere key={banniere.title} objBanniere={banniere} />
         ))}

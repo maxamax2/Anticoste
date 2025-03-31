@@ -1,8 +1,12 @@
 const Banniere = ({ objBanniere }) => {
   return (
-    <div>
+    <div className="banniere__recit--container__banniere">
       <h1>{objBanniere.title}</h1>
-      <img src={objBanniere.photoName} alt={objBanniere.title} />
+      <img
+        className="banniere__recit--image"
+        src={objBanniere.photoName}
+        alt={objBanniere.title}
+      />
     </div>
   );
 };
