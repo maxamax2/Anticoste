@@ -8,7 +8,9 @@ const ListeRecits = () => {
     <div>
       <div className="bannieres__recit--container">
         {bannieres.map((banniere) => (
+          <a href="">
           <Banniere key={banniere.title} objBanniere={banniere} />
+          </a>
         ))}
       </div>
     </div>
