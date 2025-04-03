@@ -5,10 +5,13 @@ body {
 .bannieres__recit--container {
   display: flex;
 }
+
 .banniere__recit--container__banniere {
   margin-right: 20px;
 }
+
 .banniere__recit--image {
   width: 415px;
   height: 600px;
+  object-fit: cover;
 }
