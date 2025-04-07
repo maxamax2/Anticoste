@@ -1,15 +1,17 @@
 import Banniere from "../Bannières/Banniere";
 import banniereData from "../../data/banniereData";
 
+import styles from "./ListeRecits.module.css";
+
 const ListeRecits = () => {
   const bannieres = banniereData;
 
   return (
     <div>
-      <div className="bannieres__recit--container">
+      <div className={styles.bannieres}>
         {bannieres.map((banniere) => (
           <a href="">
-          <Banniere key={banniere.title} objBanniere={banniere} />
+            <Banniere key={banniere.title} objBanniere={banniere} />
           </a>
         ))}
       </div>

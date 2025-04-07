@@ -1,0 +1,9 @@
+.banniere {
+    margin-right: 20px;
+}
+
+.img {
+    width: 415px;
+    height: 600px;
+    object-fit: cover;
+}

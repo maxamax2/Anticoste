@@ -1,9 +1,11 @@
+import styles from "./Banniere.module.css";
+
 const Banniere = ({ objBanniere }) => {
   return (
-    <div className="banniere__recit--container__banniere">
+    <div className={styles.banniere}>
       <h1>{objBanniere.title}</h1>
       <img
-        className="banniere__recit--image"
+        className={styles.img}
         src={objBanniere.photoName}
         alt={objBanniere.title}
       />

@@ -1,0 +1,5 @@
+.bannieres {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}

@@ -1,9 +1,10 @@
 import ListeRecits from "../components/ListeRécits/ListeRecits";
 
+import styles from "./RoseDesVents.module.css";
 
 const RoseDesVents = () => {
   return (
-    <div>
+    <div className={styles.container}>
       <ListeRecits />
     </div>
   );
