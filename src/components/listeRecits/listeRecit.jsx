@@ -1,7 +1,7 @@
-import Banniere from "../Bannières/Banniere";
+import Banniere from "../banniere/banniere";
 import banniereData from "../../data/banniereData";
 
-import styles from "./ListeRecits.module.css";
+import styles from "./listeRecits.module.css";
 
 const ListeRecits = () => {
   const bannieres = banniereData;
@@ -10,8 +10,8 @@ const ListeRecits = () => {
     <div>
       <div className={styles.bannieres}>
         {bannieres.map((banniere) => (
-          <a href="">
-            <Banniere key={banniere.title} objBanniere={banniere} />
+          <a href="" key={banniere.title}>
+            <Banniere objBanniere={banniere} />
           </a>
         ))}
       </div>

@@ -1,4 +1,4 @@
-import styles from "./Banniere.module.css";
+import styles from "./banniere.module.css";
 
 const Banniere = ({ objBanniere }) => {
   return (

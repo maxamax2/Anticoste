@@ -1,4 +1,4 @@
-import ListeRecits from "../components/ListeRécits/ListeRecits";
+import ListeRecits from "../components/listeRecits/listeRecit";
 
 import styles from "./RoseDesVents.module.css";
 
