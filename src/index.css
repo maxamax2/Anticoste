@@ -1,3 +1,24 @@
 body {
   background-image: url(../public/assets/images/carte.jpg);
 }
+
+.navigation{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120px;
+}
+@media (max-width: 390px) {
+  .navigation{
+     justify-content: center;
+  }
+}
+
+.roseVent{
+  width: 100px;
+}
+
+.navigationTitre{
+  font-size: 64px;
+}
+
