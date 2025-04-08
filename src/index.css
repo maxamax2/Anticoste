@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+
 body {
+  font-family: "Cormorant Upright", serif;
   background-image: url(../public/assets/images/carte.jpg);
 }
 
