@@ -1,10 +1,27 @@
 .banniere {
-    margin-right: 20px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+}
+
+.banniere:hover {
+    transform: translateY(-10px);
+}
+
+.banniereTitle {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #F6F5F4;
+    z-index: 2;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);
 }
 
 .img {
     width: 100%;
     height: auto;
+    filter: brightness(0.8);
+    z-index: 1;
 }
 
 @media (min-width: 768px) {

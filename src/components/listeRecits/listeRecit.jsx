@@ -15,6 +15,9 @@ const ListeRecits = () => {
   // Calculate total number of pages
   const totalPages = Math.ceil(bannieres.length / bannieresPerSlide);
 
+  const progressPercentage =
+    ((currentIndex / bannieresPerSlide + 1) / totalPages) * 100;
+
   // Check window size on mount and resize
   useEffect(() => {
     const checkMobile = () => {
@@ -38,7 +41,7 @@ const ListeRecits = () => {
     if (containerRef.current) {
       setIsTransitioning(true);
       containerRef.current.style.transform = `translateX(-${
-        (index * 100) / totalPages
+        (index * 85) / totalPages
       }%)`;
 
       // Reset the transitioning state after animation completes
@@ -83,7 +86,7 @@ const ListeRecits = () => {
           style={
             !isMobile
               ? {
-                  width: `${totalPages * 100}%`,
+                  width: `${totalPages * 90}%`,
                   display: "flex",
                   transition: "transform 0.5s ease-in-out",
                 }
@@ -119,22 +122,20 @@ const ListeRecits = () => {
 
       {!isMobile && (
         <div className={styles.navigationButtons}>
+          <div className={styles.progressContainer}>
+            <div
+              className={styles.progressBar}
+              style={{ width: `${progressPercentage}%` }}
+            ></div>
+          </div>
+
           <button
             onClick={handlePrev}
             disabled={currentIndex === 0}
             className={`${styles.navButton} ${
               currentIndex === 0 ? styles.disabled : ""
-            }`}
-          >
-            Précédent
-          </button>
-
-          <div className={styles.pageIndicator}>
-            <span>
-              {Math.floor(currentIndex / bannieresPerSlide) + 1} /
-              {Math.ceil(bannieres.length / bannieresPerSlide)}
-            </span>
-          </div>
+            } ${styles.prevButton}`}
+          ></button>
 
           <button
             onClick={handleNext}
@@ -143,10 +144,8 @@ const ListeRecits = () => {
               currentIndex + bannieresPerSlide >= bannieres.length
                 ? styles.disabled
                 : ""
-            }`}
-          >
-            Suivant
-          </button>
+            } ${styles.nextButton}`}
+          ></button>
         </div>
       )}
     </div>

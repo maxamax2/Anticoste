@@ -32,7 +32,6 @@
 
 .navigationButtons {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 16px;
 }
@@ -40,6 +39,7 @@
 .navButton {
     padding: 8px 16px;
     cursor: pointer;
+    border: none;
 }
 
 .navButton.disabled {
@@ -47,9 +47,39 @@
     cursor: not-allowed;
 }
 
-.pageIndicator {
-    display: flex;
-    align-items: center;
+.prevButton {
+    background: url('../../../public/assets/svg/previous.svg') no-repeat center center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.nextButton {
+    background: url('../../../public/assets/svg/next.svg') no-repeat center center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.progressContainer {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #1E1E24;
+    border-radius: 99px;
+    margin: 0 16px;
+    padding: 3px 10px 3px 10px;
+    overflow: hidden;
+}
+
+.progressBar {
+    width: 100%;
+    height: 80%;
+    margin-top: 1px;
+    background-color: #FFF8F0;
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out;
 }
 
 /* Desktop layout (768px and above): horizontal sliding carousel */
@@ -69,7 +99,6 @@
     .banniereLink {
         flex-shrink: 0;
         margin-bottom: 0;
-        margin-right: 16px;
         /* Add spacing between items in the carousel */
     }
 }
