@@ -1,5 +1,75 @@
+/* Mobile-first styles for listeRecits.module.css */
+
+.carouselContainer {
+    width: 100%;
+    max-width: 390px;
+    /* Mobile target width */
+    margin: 0 auto;
+    padding: 0 16px;
+    /* Side margins */
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselViewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Mobile layout (default): vertical list of bannieres */
 .bannieres {
     display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banniereLink {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.navigationButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.navButton {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.navButton.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pageIndicator {
+    display: flex;
+    align-items: center;
+}
+
+/* Desktop layout (768px and above): horizontal sliding carousel */
+@media (min-width: 768px) {
+    .carouselContainer {
+        max-width: 100%;
+        /* Full width on desktop */
+    }
+
+    .bannieres {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .banniereLink {
+        flex-shrink: 0;
+        margin-bottom: 0;
+        margin-right: 16px;
+        /* Add spacing between items in the carousel */
+    }
 }
