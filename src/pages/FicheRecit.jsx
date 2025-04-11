@@ -1,4 +1,4 @@
-import Recit from "../components/recit/Recit";
+import Recit from "../components/recit/recit";
 
 const FicheRecit = () => {
   return (
