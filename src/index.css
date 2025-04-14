@@ -6,23 +6,27 @@ body {
   background-image: url(../public/assets/images/carte.jpg);
 }
 
-.navigation{
+h1 {
+  font-family: "Cormorant Upright", serif;
+}
+
+.navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 120px;
 }
+
 @media (max-width: 390px) {
-  .navigation{
-     justify-content: center;
+  .navigation {
+    justify-content: center;
   }
 }
 
-.roseVent{
+.roseVent {
   width: 100px;
 }
 
-.navigationTitre{
+.navigationTitre {
   font-size: 64px;
 }
-

@@ -1,5 +1,114 @@
+/* Mobile-first styles for listeRecits.module.css */
+
+.carouselContainer {
+    width: 100%;
+    max-width: 390px;
+    /* Mobile target width */
+    margin: 30px auto;
+    padding: 0 16px;
+    /* Side margins */
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselViewport {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Mobile layout (default): vertical list of bannieres */
 .bannieres {
     display: flex;
-    overflow-x: auto;
-    scrollbar-width: none;
+    flex-direction: column;
+    width: 100%;
+}
+
+.banniereLink {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    text-decoration: none;
+}
+
+.navigationButtons {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.navButton {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.navButton.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.prevButton {
+    background: url('../../../public/assets/svg/previous.svg') no-repeat center center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+}
+
+.prevButton:not(.disabled):hover {
+    rotate: -360deg;
+    transition: rotate 0.3s ease-in-out;
+}
+
+.nextButton {
+    background: url('../../../public/assets/svg/next.svg') no-repeat center center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.nextButton:not(.disabled):hover {
+    rotate: -360deg;
+    transition: rotate 0.3s ease-in-out;
+}
+
+.progressContainer {
+    flex-grow: 1;
+    height: 8px;
+    background-color: #1E1E24;
+    border-radius: 99px;
+    margin: 0 16px;
+    padding: 3px 10px 3px 10px;
+    overflow: hidden;
+}
+
+.progressBar {
+    width: 100%;
+    height: 80%;
+    margin-top: 1px;
+    background-color: #FFF8F0;
+    border-radius: 4px;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Desktop layout (768px and above): horizontal sliding carousel */
+@media (min-width: 768px) {
+    .carouselContainer {
+        max-width: 100%;
+        /* Full width on desktop */
+    }
+
+    .bannieres {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .banniereLink {
+        flex-shrink: 0;
+        margin-bottom: 0;
+        /* Add spacing between items in the carousel */
+    }
 }
