@@ -4,7 +4,7 @@
     width: 100%;
     max-width: 390px;
     /* Mobile target width */
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 0 16px;
     /* Side margins */
     overflow: hidden;
@@ -55,12 +55,22 @@
     margin-right: 20px;
 }
 
+.prevButton:not(.disabled):hover {
+    rotate: -360deg;
+    transition: rotate 0.3s ease-in-out;
+}
+
 .nextButton {
     background: url('../../../public/assets/svg/next.svg') no-repeat center center;
     background-size: contain;
     width: 60px;
     height: 60px;
     margin-left: 20px;
+}
+
+.nextButton:not(.disabled):hover {
+    rotate: -360deg;
+    transition: rotate 0.3s ease-in-out;
 }
 
 .progressContainer {
