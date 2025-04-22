@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Controles from "../controles/Controles";
 import ListeRecits from "../listeRecits/listeRecit";
+import SubCarousel from "../subCarousel/SubCarousel";
 
 import styles from "./main.module.css";
 
@@ -17,6 +18,7 @@ const Main = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 391);
   const [currentPage, setCurrentPage] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(calculateItemsPerPage());
+  const [selectedBanniere, setSelectedBanniere] = useState(null); // Track selected Banniere
   const totalPages = Math.ceil(7 / itemsPerPage); // Dynamically calculate total pages
 
   useEffect(() => {
@@ -42,16 +44,37 @@ const Main = () => {
     }
   };
 
+  const handleBanniereClick = (banniere) => {
+    setSelectedBanniere(banniere); // Set the clicked Banniere
+  };
+
+  const handleCloseSubCarousel = () => {
+    setSelectedBanniere(null); // Close the SubCarousel
+  };
+
   return (
     <div className={styles.main}>
-      <ListeRecits currentPage={currentPage} itemsPerPage={itemsPerPage} />
-      {!isMobile && (
-        <Controles
-          currentPage={currentPage}
-          totalPages={totalPages}
-          onNext={handleNext}
-          onPrevious={handlePrevious}
+      {selectedBanniere ? (
+        <SubCarousel
+          subCarousel={selectedBanniere.subCarousel}
+          onClose={handleCloseSubCarousel}
         />
+      ) : (
+        <>
+          <ListeRecits
+            currentPage={currentPage}
+            itemsPerPage={itemsPerPage}
+            onBanniereClick={handleBanniereClick}
+          />
+          {!isMobile && (
+            <Controles
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onNext={handleNext}
+              onPrevious={handlePrevious}
+            />
+          )}
+        </>
       )}
     </div>
   );

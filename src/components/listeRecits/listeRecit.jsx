@@ -3,7 +3,7 @@ import banniereData from "../../data/banniereData";
 
 import styles from "./listeRecits.module.css";
 
-const ListeRecits = ({ currentPage }) => {
+const ListeRecits = ({ currentPage, onBanniereClick }) => {
   return (
     <div
       className={styles.listeRecits}
@@ -13,7 +13,11 @@ const ListeRecits = ({ currentPage }) => {
       }}
     >
       {banniereData.map((item, index) => (
-        <Banniere key={index} objBanniere={item} />
+        <Banniere
+          key={index}
+          objBanniere={item}
+          onClick={() => onBanniereClick(item)} // Pass the clicked Banniere
+        />
       ))}
     </div>
   );
