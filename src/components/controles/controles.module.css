@@ -1,0 +1,64 @@
+.controles {
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  position: relative;
+  width: 80%;
+  padding: 0 10px;
+  height: 15px;
+  border-radius: 99px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.paginationContainer {
+  position: absolute;
+  top: 20%;
+  left: 4px;
+  height: 60%;
+  border-radius: 99px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+}
+
+.suivantButton img {
+  width: 60px;
+  height: 60px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.suivantButton:hover img {
+  transform: translateX(10px);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.precedentButton img {
+  margin-right: 30px;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.precedentButton:hover img {
+  transform: translateX(-10px);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}

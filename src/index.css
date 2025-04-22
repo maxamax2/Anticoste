@@ -1,32 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
 
 body {
   font-family: "Cormorant Upright", serif;
-  background-image: url(../public/assets/images/carte.jpg);
+  background-image: url(../assets/images/carte.jpg);
+}
+
+.app {
+  margin: 20px auto;
 }
 
 h1 {
   font-family: "Cormorant Upright", serif;
-}
-
-.navigation {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 120px;
-}
-
-@media (max-width: 390px) {
-  .navigation {
-    justify-content: center;
-  }
-}
-
-.roseVent {
-  width: 100px;
-}
-
-.navigationTitre {
-  font-size: 64px;
 }

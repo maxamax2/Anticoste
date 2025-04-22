@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__logo {
+  width: 150px;
+  height: 150px;
+}
+.header__title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e1e24;
+}
