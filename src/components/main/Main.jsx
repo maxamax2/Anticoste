@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Controles from "../controles/Controles";
-import ListeRecits from "../listeRecits/ListeRecit";
+import ListeRecits from "../listeRecits/listeRecit";
 
 import styles from "./main.module.css";
 
