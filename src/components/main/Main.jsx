@@ -10,7 +10,7 @@ const Main = () => {
     if (screenWidth <= 391) return 7;
     if (screenWidth <= 768) return 3;
     if (screenWidth <= 1000) return 3;
-    if (screenWidth >= 1900) return 7;
+    if (screenWidth >= 2250) return 7;
     return 4;
   };
 
