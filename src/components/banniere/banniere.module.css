@@ -44,6 +44,7 @@
     object-fit: cover;
     filter: brightness(0.6);
   }
+
   .img:hover {
     transform: translateY(0px);
     transition: transform 0.3s ease-in-out;
