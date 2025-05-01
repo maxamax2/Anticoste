@@ -23,11 +23,18 @@ const SubCarousel = ({ subCarousel, onClose }) => {
       <button className={styles.closeButton} onClick={onClose}>
         Close
       </button>
-      <img
+      <div className="texteImage">
+        <p className="texte">
+      {item.texte}
+      </p>
+        <img
         className={styles.image}
         src={item.photoName}
         alt={item.title || "SubCarousel Image"}
       />
+      </div>
+      
+      
       <div className={styles.info}>
         <h2>{item.title}</h2>
         <small>{item.reference}</small>
