@@ -17,14 +17,14 @@ const Controles = ({ currentPage, totalPages, onNext, onPrevious }) => {
           onClick={onPrevious}
           disabled={currentPage === 0}
         >
-          <img src="../assets/svg/previous.svg" alt="Previous" />
+          <img src="../Anticoste/assets/svg/previous.svg" alt="Previous" />
         </button>
         <button
           className={`${styles.button} ${styles.suivantButton}`}
           onClick={onNext}
           disabled={currentPage === totalPages - 1}
         >
-          <img src="../assets/svg/next.svg" alt="Next" />
+          <img src="../Anticoste/assets/svg/next.svg" alt="Next" />
         </button>
       </div>
     </div>

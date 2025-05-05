@@ -26,7 +26,7 @@ const SubCarousel = ({ subCarousel, onClose }) => {
         </button>
       </div>
 
-      <div className="content"></div>
+      {/* <div className="content"></div> */}
 
       {/* <div className={styles.content}>
         <div className={styles.imageTextuel}>
@@ -39,7 +39,6 @@ const SubCarousel = ({ subCarousel, onClose }) => {
         </div>
 
         <div className={styles.controls}>
-
           <div className={styles.navigation}>
             <button onClick={handlePrev} className={styles.prevButton}>
               &lt;

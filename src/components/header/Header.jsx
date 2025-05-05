@@ -5,7 +5,7 @@ const Header = () => {
     <header className={styles.header}>
       <img
         className={styles.header__logo}
-        src="../../assets/svg/rose.svg"
+        src="../../Anticoste/assets/svg/rose.svg"
         alt="Rose des vents"
       />
       <h1 className={styles.header__title}>Anticoste</h1>
