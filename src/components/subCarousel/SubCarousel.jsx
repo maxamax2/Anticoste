@@ -26,7 +26,7 @@ const SubCarousel = ({ subCarousel, onClose }) => {
         </button>
       </div>
 
-      <div className="content">div.</div>
+      <div className="content"></div>
 
       {/* <div className={styles.content}>
         <div className={styles.imageTextuel}>
