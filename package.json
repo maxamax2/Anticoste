@@ -2,7 +2,7 @@
   "name": "anticoste",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://maxamax2.github.io/Anticoste",
+  "homepage": "https://maxamax2.github.io/Anticoste/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
