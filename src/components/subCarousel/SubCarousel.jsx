@@ -20,34 +20,36 @@ const SubCarousel = ({ subCarousel, onClose }) => {
 
   return (
     <div className={styles.subCarousel}>
-      <button className={styles.closeButton} onClick={onClose}>
-        Close
-      </button>
-      <div className="texteImage">
-        <p className="texte">
-      {item.texte}
-      </p>
-        <img
-        className={styles.image}
-        src={item.photoName}
-        alt={item.title || "SubCarousel Image"}
-      />
-      </div>
-      
-      
-      <div className={styles.info}>
-        <h2>{item.title}</h2>
-        <small>{item.reference}</small>
+      <div className={styles.header}>
+        <button className={styles.closeButton} onClick={onClose}>
+          Close
+        </button>
       </div>
 
-      <div className={styles.navigation}>
-        <button onClick={handlePrev} className={styles.prevButton}>
-          &lt;
-        </button>
-        <button onClick={handleNext} className={styles.nextButton}>
-          &gt;
-        </button>
-      </div>
+      <div className="content">div.</div>
+
+      {/* <div className={styles.content}>
+        <div className={styles.imageTextuel}>
+          <p className={styles.texte}>{item.texte}</p>
+          <img
+            className={styles.image}
+            src={item.photoName}
+            alt={item.title || "SubCarousel Image"}
+          />
+        </div>
+
+        <div className={styles.controls}>
+
+          <div className={styles.navigation}>
+            <button onClick={handlePrev} className={styles.prevButton}>
+              &lt;
+            </button>
+            <button onClick={handleNext} className={styles.nextButton}>
+              &gt;
+            </button>
+          </div>
+        </div>
+      </div> */}
     </div>
   );
 };
