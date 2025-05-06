@@ -106,7 +106,7 @@ const banniereData = [
   },
   {
     title: "Nés sur le reef",
-    photoName: "Anticoste/assets/images/r5/01.jpg",
+    photoName: "/Anticoste/assets/images/r5/01.jpg",
   },
   {
     title: "Sont venus chercher",
