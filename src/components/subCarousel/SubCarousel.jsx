@@ -63,7 +63,7 @@ const SubCarousel = ({ subCarousel, onClose }) => {
             </svg>
           </button>
         </div>
-        <button className={styles.prevButton} onClick={handlePrev}>
+        <button className={styles.nextButton} onClick={handleNext}>
           <img src="/Anticoste/assets/svg/next.svg" alt="Previous button" />
         </button>
       </div>

@@ -137,3 +137,20 @@
 .showText~.toggleButton {
   bottom: 85px;
 }
+
+.prevButton,
+.nextButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: translate 0.3s ease;
+}
+
+.prevButton:hover {
+  translate: -10px;
+}
+
+.nextButton:hover {
+  translate: 10px;
+}
