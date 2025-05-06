@@ -2,8 +2,7 @@
 
 body {
   font-family: "Cormorant Upright", serif;
-  background-image: url(../Anticoste/assets/images/carte.jpg);
-  background-color: red;
+  background-image: url(../assets/images/carte.jpg);
 }
 
 .app {
