@@ -9,6 +9,7 @@ const Header = () => {
         alt="Rose des vents"
       />
       <h1 className={styles.header__title}>Anticoste</h1>
+        <h2 className={styles.second__title}>À propos</h2> 
     </header>
   );
 };
